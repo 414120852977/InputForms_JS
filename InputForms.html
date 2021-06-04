@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resistration</title>
-<link rel="stylesheet" href ="C:\Users\ashok\Downloads\javascriptProgramming\html\bridgelabz.JPG">
+<link rel="stylesheet" href ="C:\Users\ashok\Downloads\javascriptProgramming\InputFormsAndMediaQueries\simple_form.css">
+
+
 </head>
 <body>
 <form>
@@ -44,26 +47,16 @@
 <span class="validity"></span>
 </div>
 <div>
-<label for="salary">choose your salary:</label>
-<input type="range" id="salary" name="salary" min="300000"
-max="500000" step="100" value="400000">
-<output class="salary-output" for="salary">400000</output>
-<span class="validity"></span>
-</div>
+            <label for="salary">Choose your salary:</label>
+            <input type="range" name="salary" id="salary" min="300000"
+                        max="500000" step="10" value="400000">
+            <output class="salary-output" for="salary"> 400000</output>
+        </div>
 <div>
 <button>Submit</button>
 </div>
 </form>
-<script>
-const text = document.querySelector('#text');
-const textError = document.querySelector('.text-error');
-text.addEventListener('input',function () {
-   let nameRegex = RegExp("^[A-Z]{1}[a-z]{2,}$"); 
-   if (nameRegex.text.value) {
-       textError.textContent="";
-       else textError.textContent = "Name is Incorrect";
-   }
-});
-</script>
+
+<script src="C:\Users\ashok\Downloads\javascriptProgramming\InputFormsAndMediaQueries\inputform.js"></script>
 </body>
 </html>
