@@ -10,4 +10,15 @@
                 //print name is incorrect if regex test is failed
             else textError.textContent = "Name is Incorrect";
         });
-        
+         //UC-2 Validation for email
+        const email = document.querySelector('#email');                     
+        const emailError = document.querySelector('.email-error');
+        email.addEventListener('input',function() {
+            //enter a valid email - E.g. abc.xyz@bl.co.in email validation 
+            let emailRegex = RegExp('^[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-])*@[A-Za-z0-9-]+(?:\\.[A-Za-z0-9-]+)*$');  
+            if(emailRegex.test(email.value))
+                emailError.textContent = "";
+            else
+            //print error message if regex test is failed
+                emailError.textContent = "Email is Incorrect";              
+        });
