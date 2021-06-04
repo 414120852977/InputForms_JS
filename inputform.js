@@ -22,3 +22,16 @@
             //print error message if regex test is failed
                 emailError.textContent = "Email is Incorrect";              
         });
+
+//UC-3 Validation for mobile number
+        const tel = document.querySelector('#tel');                             
+        const telError = document.querySelector('.tel-error');
+        tel.addEventListener('input',function() {
+            //Country code follow by space and 10 digit number
+            let telRegex = RegExp('^[0-9]{2}[ ][6-9]{1}[0-9]{9}$');              
+            if(telRegex.test(tel.value))
+                telError.textContent = "";
+            else
+            //print error message if regex test is failed
+                telError.textContent = "Contact number is Incorrect";              
+        });
