@@ -6,55 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resistration</title>
 <link rel="stylesheet" href ="C:\Users\ashok\Downloads\javascriptProgramming\InputFormsAndMediaQueries\simple_form.css">
-
-
 </head>
 <body>
 <form>
-<header class="headerContainer"><h1>HTML 5 Input form</h1></header>
-<div>
-<label for="text">text input type for name: </label>
-<input type="text" id="text" name="text" pattern="^[A-Z]{1}[a-z]{2,}$">
-<error-output class="text-error" for="text"></error-output>
-</div>
-<div>
-<label for="pwd">password input type:</label>
-<input type="password" id="pwd" name="pwd">
-</div>
-<div>
-<label for="email">email input:</label>
-<input type="email" id="email" name="email">
-</div>
-<div>
-<label for="url">url input:</label>
-<input type="url" id="url" name="url">
-</div>
-<div>
-<label for="number">number input:</label>
-<input type="number" id="number" name="number">
-</div>
-<div>
-<label for="tel">tel input type:</label>
-<input type="tel" id="tel" name="tel">
-</div>
-<div>
-<label for="search">search input type:</label>
-<input type="search" id="search" name="search">
-</div>
-<div class="nativeDateTimePicker">
-<label for="party">choose a date and time:</label>
-<input type="date" id="party" name="bday">
-<span class="validity"></span>
-</div>
-<div>
+    <header class="headerContainer"><h1>HTML 5 Input form</h1></header>
+        <div>
+            <label for="text">text input type for name: </label>
+            <input type="text" id="text" name="text" pattern="^[A-Z]{1}[a-z]{2,}$">
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+
+        <div>
+            <label for="pwd">password input type:</label>
+            <input type="password" id="pwd" name="pwd">
+        </div>
+
+        <div>
+            <label for="email">email input:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        
+        <div>
+            <label for="url">url input:</label>
+            <input type="url" id="url" name="url">
+        </div>
+        
+        <div>
+            <label for="number">number input:</label>
+            <input type="number" id="number" name="number">
+        </div>
+
+        <div>
+            <label for="tel">tel input type:</label>
+            <input type="tel" id="tel" name="tel">
+        </div>
+
+        <div>
+            <label for="search">search input type:</label>
+            <input type="search" id="search" name="search">
+        </div>
+
+        <div class="nativeDateTimePicker">
+            <label for="party">choose a date and time:</label>
+            <input type="date" id="party" name="bday">
+            <span class="validity"></span>
+        </div>
+
+        <div>
             <label for="salary">Choose your salary:</label>
             <input type="range" name="salary" id="salary" min="300000"
                         max="500000" step="10" value="400000">
             <output class="salary-output" for="salary"> 400000</output>
         </div>
-<div>
-<button>Submit</button>
-</div>
+
+        <div>
+            <button>Submit</button>
+        </div>
 </form>
 
 <script src="C:\Users\ashok\Downloads\javascriptProgramming\InputFormsAndMediaQueries\inputform.js"></script>
